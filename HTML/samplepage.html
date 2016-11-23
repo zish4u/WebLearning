@@ -8,8 +8,9 @@
       #main-container{
         background:#2FBF71;
         color:#ffffff;   /*white color*/
-        margin:30px 60px 30px 60px; /*all side margin is 100px.margin always in clock-wise manner...top-->right-->bottom-->left*/
+        margin:30px 60px 0px 60px; /*all side margin is 100px.margin always in clock-wise manner...top-->right-->bottom-->left*/
         font-family:monospace,sans-serif;
+        padding: 20px 20px;
       }
       #div1{
         font-size: 15px;
@@ -17,22 +18,51 @@
       #footer-container{
         text-align: center;
         background-color: green;
+        margin:0px 60px 30px 60px;
+      }
+      table th,td{
+        border: 1px solid black;
+      }
+      form{
+        border:1px solid red;
+        padding: 20px;
       }
     </style>
   </head>
   <body>
     <div id="main-container">
-    <h1>Example Project</h1>
-    <a href="#">ABOUT</a> | <a href="#">SERVICES</a> | <a href="#">CONTACT</a>
+      <h1>Example Project</h1>
+      <a href="#">ABOUT</a> | <a href="#">SERVICES</a> | <a href="#">CONTACT</a>
       <div id="div1">
-      <h4>About Us:</h4>
+        <h4>About Us:</h4>
         <p>
-          Sample paragraph.Lorem ipsum dolor sit amet,<br>
-          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....<a href="http://www.iana.org/domains/example" target="_blank">Read More</a>
+        Sample paragraph.Lorem ipsum dolor sit amet,<br>
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....<a href="http://www.iana.org/domains/example" target="_blank">Read More</a>
         </p>
       </div>
-
+      <br>
       <div>
+        <p>Table:</p>
+        <table style="">
+          <tr>
+            <th>Fruit Name</th>
+            <th>Color</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Red, Green</td>
+            <td>Sweet, Bitter</td>
+          </tr>
+          <tr>
+            <td>Guava</td>
+            <td>Green</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div><br>
+      <div>
+        <p>Form: </p>
         <form>
           <input type="text" name="name" placeholder="Enter Name">
           <input type="text" name="email" placeholder="Enter Email"><br><br>
@@ -51,8 +81,14 @@
           <textarea name="address" rows="8" cols="40"></textarea><br>
           <input type="submit" name="submt">
         </form>
+      </div><br>
+      <div>
+        <p>I-Frame: In html i-frame give ability to display a website in another website.</p>
+        <iframe height="300px" width="100%" src="demo_iframe.htm" name="myframe"></iframe>
+        <p>Clck this link---> <a href="http://www.w3schools.com" target="myframe">W3Schools.com</a></p>
       </div>
-      <div id="footer-container">
+    </div>
+      <div id="footer-container"><br>
       <footer>
          <p>This is a sample website written and coded by Zishan Faridy.</p>
       </footer>

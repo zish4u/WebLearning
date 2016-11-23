@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ExampleWebpage</title>
+
+    <title>LearningHtml</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<style> tag is used fir styling html elements-->
     <style>
       #main-container{
         background:#2FBF71;
@@ -17,81 +20,109 @@
       }
       #footer-container{
         text-align: center;
-        background-color: green;
+        background-color: #666666;
         margin:0px 60px 30px 60px;
+        padding-bottom: 20px;
       }
       table th,td{
         border: 1px solid black;
       }
       form{
-        border:1px solid red;
         padding: 20px;
       }
     </style>
   </head>
   <body>
-    <div id="main-container">
-      <h1>Example Project</h1>
+
+    <div id="main-container">  <!--div is like a container and id is used here for styling content of this div container-->
+      <h1>Example Project</h1> <!--Largest html heading h1 added-->
+      <!--Navigations of page added-->
       <a href="#">ABOUT</a> | <a href="#">SERVICES</a> | <a href="#">CONTACT</a>
       <div id="div1">
-        <h4>About Us:</h4>
+        <h4>About Us:</h4>  <!--h4 heading-->
+
+        <!--paragraph added-->
         <p>
-        Sample paragraph.Lorem ipsum dolor sit amet,<br>
+        Sample paragraph.Lorem ipsum dolor sit amet,
+        <br> <!--Line break or starting of new line-->
         consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....<a href="http://www.iana.org/domains/example" target="_blank">Read More</a>
         </p>
       </div>
       <br>
+      <!--Table-container-->
       <div>
         <p>Table:</p>
-        <table style="">
+        <!--Table added-->
+        <table>
+          <tr>   <!--Table row-->
+            <th>Fruit Name</th> <!--Table head-->
+            <th>Color</th>   <!--Table head-->
+            <th>Taste</th>    <!--Table head-->
+          </tr>  <!--End of table row-->
           <tr>
-            <th>Fruit Name</th>
-            <th>Color</th>
-            <th>Taste</th>
-          </tr>
-          <tr>
-            <td>Apple</td>
-            <td>Red, Green</td>
-            <td>Sweet, Bitter</td>
+            <td>Apple</td>   <!--table data-->
+            <td>Red, Green</td>   <!--table data-->
+            <td>Sweet, Bitter</td>  <!--table data-->
           </tr>
           <tr>
             <td>Guava</td>
             <td>Green</td>
             <td>Sweet</td>
           </tr>
-        </table>
-      </div><br>
-      <div>
-        <p>Form: </p>
+        </table> <!--End of table-->
+      </div> <!--End of table container-->
+      <br>
+
+        <!--html forms added-->
         <form>
-          <input type="text" name="name" placeholder="Enter Name">
-          <input type="text" name="email" placeholder="Enter Email"><br><br>
-          <input type="radio" name="gender" value="male" checked>Male</input>
-          <input type="radio" name="gender" value="female">Female</input><br><br>
-          <input type="checkbox" name="color" value="red">Red</input>
-          <input type="checkbox" name="color" value="green" >Green</input>
-          <input type="checkbox" name="color" value="yellow" checked>Yellow</input>
-          <select>
-            <option name="fruit" value="1">--Select--</option>
-            <option name="fruit" value="1">Apple</option>
-            <option name="fruit" value="1">Guava</option>
-            <option name="fruit" value="1">Pineapple</option>
-            <option name="fruit" value="1">Kiwi</option>
-          </select><br><br>
-          <textarea name="address" rows="8" cols="40"></textarea><br>
-          <input type="submit" name="submt">
-        </form>
-      </div><br>
+          <fieldset>
+            <legend>Form: </legend>
+            <input type="text" name="name" placeholder="Enter Name">
+            <input type="text" name="email" placeholder="Enter Email"><br>
+            <p>Choose one:</P>
+            <input type="radio" name="gender" value="Flowers" checked>Flowers</input>
+            <input type="radio" name="gender" value="Fruits">Fruits</input><br><br>
+            <p>Choose color:</P>
+            <input type="checkbox" name="color" value="red">Red</input>
+            <input type="checkbox" name="color" value="green" >Green</input>
+            <input type="checkbox" name="color" value="yellow" checked>Yellow</input>
+            <p>Quantity(between 1 to 5): <input type="number" name="quantity" min="1" max="5"></p>
+            <select>
+              <option name="fruit" value="1">--Select--</option>
+              <option name="fruit" value="1">Apple</option>
+              <option name="fruit" value="1">Guava</option>
+              <option name="fruit" value="1">Pineapple</option>
+              <option name="fruit" value="1">Kiwi</option>
+            </select><br><br>
+            <textarea name="address" rows="8" cols="40"></textarea><br>
+            <input type="submit" name="submt">
+          </fieldset>
+        </form> <!-- End of forms-->
+      <br>
+      <!--I-frame container-->
       <div>
-        <p>I-Frame: In html i-frame give ability to display a website in another website.</p>
-        <iframe height="300px" width="100%" src="demo_iframe.htm" name="myframe"></iframe>
-        <p>Clck this link---> <a href="http://www.w3schools.com" target="myframe">W3Schools.com</a></p>
+        <p>I-Frame: In html i-frame give ability to display a website in another website,<br>
+          and we can also play video or audio from another website like youtube. </p>
+        <div>
+          <!--I-frame added-->
+          <iframe height="400px" width="600" src="demo_iframe.htm" name="myframe"></iframe>
+          <p>Click this link---> <a href="http://www.w3schools.com" target="myframe">W3Schools.com</a></p>
+        </div>
+        <div>
+          <!--I-frame added-->
+          <iframe src="https://youtube.com/embed/xKVlZ3wFVKA" width="600" height="400"></iframe>
+          <p>This video is used here for learning purposes.<br>
+            It is a property of their respactive owner.<br>you can see this video on youtube by <a href="https://youtu.be/xKVlZ3wFVKA?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD" target="_blank">cliking here</a>
+        </div>
       </div>
     </div>
-      <div id="footer-container"><br>
+
+      <!--Footer-->
+     <div id="footer-container"> <!--Footer container-->
+      <br>
       <footer>
-         <p>This is a sample website written and coded by Zishan Faridy.</p>
-      </footer>
-  </div>
-  </body>
-</html>
+         <p style="font-size:18px;color:#ffffff"><b>&lt;&gt;</b> This is a sample website written and coded with <b>&#9829;</b> by Zishan Faridy.<b> &lt;&#47;&gt;</b></p>
+      </footer><!--End of footer-->
+    </div> <!--End of footer container-->
+  </body> <!--End of body-->
+</html>   <!--End of html-->

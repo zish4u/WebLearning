@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learning CSS</title>
+    <style>
+      .dotted{
+        border-style: dotted;
+        padding: 10px;
+      }
+      .dashed{
+        border-style: dashed;
+        padding: 10px;
+      }
+      .solid{
+        border-style: solid;
+        padding: 10px;
+      }
+      .double{
+        border-style: double;
+        padding: 10px;
+      }
+      .groove{
+        border-style: groove;
+        padding: 10px;
+      }
+      .ridge{
+        border-style: ridge;
+        padding: 10px;
+      }
+      .inset{
+        border-style: inset;
+        padding: 10px;
+      }
+      .none{
+        border-style: none;
+        padding: 10px;
+      }
+      .hidden{
+        border-style: hidden;
+        padding: 10px;
+      }
+      .outset{
+        border-style: outset;
+        padding: 10px;
+      }
+      /*
+        In this mix class we are styling border's top by dashed,
+        right by double, bottom by groove and left by solid,similarly we can style any side by any style.
+      */
+      .mix{
+        border-style: dashed double groove solid;
+        padding: 10px;
+      }
+      .shorthand{
+        border: 5px solid green;
+      }
+      .custom{
+        border-left: 6px solid red;
+        background-color: lightgray;
+        padding: 20px;
+      }
+      .round{
+        border: 2px solid blue;
+        border-radius: 12px;
+      }
+      .less-round{
+        border: 2px solid green;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS BORDER STYLES: </h1>
+    <p class="dotted">This is dotted style border.</p>
+    <p class="dashed">This is dashed style border.</p>
+    <p class="solid">This is solid style border.</p>
+    <p class="double">This is double style border.</p>
+    <p class="groove">This is groove style border.</p>
+    <p class="ridge">This is ridge style border.</p>
+    <p class="inset">This is inset style border.</p>
+    <p class="none">This is none style means no border.</p>
+    <p class="hidden">This is hidden style means hidden border.</p>
+    <p class="outset">This is outset style border.</p>
+    <p class="mix">This is mix style border.</p>
+    <p class="shorthand">There are many properties to consider when dealing with borders.To shorten the code,
+       it is also possible to specify all the individual border properties in one property.</p>
+    <p class="custom">Also we can style border like this.</p>
+    <p class="round">Also we can use round border,this border has border-radius which is 12px.</p>
+    <p class="less-round">This border has border-radius which is 5px.</p>
+  </body>
+</html>

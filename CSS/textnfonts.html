@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Text and Fonts</title>
+    <style>
+    body{
+      margin: 60px;
+
+    }
+    #one{
+      color:blue;
+    }
+    #two{
+      background-color: #666666;
+      color: white;
+    }
+    #three{
+      text-align: left;
+    }
+    #four{
+      text-align: center;
+    }
+    #five{
+      text-align: right;
+    }
+    #six{
+      border: 2px solid orange;
+      width: 200px;
+      padding: 5px;
+      text-align: justify;
+    }
+    p.serif{
+      font-family: "Times New Roman",Times,serif;
+    }
+    p.sansserif{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .font-size{
+      border: 2px solid gray;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>CSS Text: </h2>
+      <p>This is an ordinary paragraph.</p>
+
+      <p id="one">This is an ordinary paragraph. Notice that this text.
+        The text color for this paragraph is defined blue.</p>
+
+      <p id="two">This is an ordinary paragraph. Notice
+        the text color for this paragraph is defined white, with a background-color gray because-
+      For W3C compliant CSS: If you define the color property, you must also define the background-color </p>
+      <p id="three">This text is aligned left.</p>
+      <p id="four">This text is aligned center.</p>
+      <p id="five">This text is aligned right.</p>
+      <p id="six">This is an ordinary paragraph. In this paragraph text-align value is justify so that,
+        each line has equal width like news paper or magzine.</p>
+      <p><span style="text-decoration:underline;">This is an underline text which means text-decoration is underline.</span>
+        <br><br><br>
+      <span style="text-decoration:line-through;">This is a deleted text which means text-decoration is line-through.</span>
+      <br><br><br>
+      <span style="text-decoration:overline;">This is an overline text which means text-decoration is oveerline.</span>
+      <br><br><br>
+      <span style="text-decoration:none;">This is an normal text which means text-decoration is none .</span>
+      <br><br><br>
+      <span style="text-transform:uppercase;">This is an uppercase text which means text-transform is uppercase .</span>
+      <br><br><br>
+      <span style="text-transform:lowercase;">This is an lowercase text which means text-transform is lowercase .</span>
+      <br><br><br>
+      <span style="text-transform:capitalize;">This is an capitalize text which means text-transform is capitalize.</span>
+      <br><br><br>
+      <span style="letter-spacing:5px;">This is an example of letter-spacing (we can see the space between two letter) which is set as 5px in this paragraph.
+      Letter spacing can also set as -ve like -10px.</span>
+      </p>
+      <br><br><br>
+      <span style="word-spacing:7px;">This is an example of word-spacing (we can see the space between two words) which is set as 7px in this paragraph.
+        Word-spacing can also set as -ve like -10px.</span>
+      <br><br><br>
+      <p>
+      This is a paragraph with a standard line-height.<br>
+      The default line height in most browsers is about 110% to 120%.<br>
+      </p>
+
+      <p style="line-height:0.7">
+      This is a paragraph with a 0.7 line-height.<br>
+      We can notice the gap between above line and this line is very less because of line-height.which is set as 0.7<br>
+      </p>
+
+      <p style="line-height:1.8">
+        This is a paragraph with a 1.8 line-height.<br>
+        We can notice the gap between above line and this line is bigger because of line-height.which is set as 1.8<br></p>
+    </div>
+    <hr>
+    <div>
+      <h2>CSS Fonts: </h2>
+      <h4>In css thre are two types of font family. </h4>
+      <ol>
+        <li>generic family - a group of font families with a similar look (like "Serif" or "Monospace")</li>
+        <li>font family - a specific font family (like "Times New Roman" or "Arial")</li>
+      </ol>
+      <p class="serif">
+        This paragraph is an example of font-family as serif. Note: We can also use more than one font by seprating comma eg- "font-family: Times, serif;."<br>
+      </p>
+      <p class="sansserif">This is a paragraph, shown in the Arial font.
+      <p style="font-style: italic">This is an example of italic font-style.</p>
+      <p style="font-style: oblique">This is an example of oblique font-style.</p>
+      <p style="font-weight: bold">This is an example of bold font-weight.</p>
+      <div class="font-size">
+        <p> To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+            The em size unit is recommended by the W3C.1em is equal to the current font size.
+            The default text size in browsers is 16px. So, the default size of 1em is 16px.
+            The size can be calculated from pixels to em using this formula: pixels/16=em <br>
+            Tips: If we use pixels, we can still use the zoom tool to resize the entire page.
+        </p>
+        <p style="font-size:30px;">The text-size of this para is 30px.</p>
+        <p style="font-size:1.8em;">The text-size of this para is 1.8em which is equivalent to 30px.</p>
+      </div>
+        <p style="font-variant:small-caps;">This is an Example of font-variant set as small-caps.</p>
+    </div>
+  </body>
+</html>

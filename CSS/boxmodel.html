@@ -6,27 +6,32 @@
     <style>
     body{
       margin: 50px;
+      text-align: justify;
     }
       p{
         border: 1px solid red;
         border-left: 7px solid red;
-        background-color: #999999;
         padding: 15px;
       }
 
-      span{
-        border: 1px solid lightblue;
-        border-left: 5px solid lightblue;
+      .border{
+
+        border-left: 5px solid blue;
+        background-color: powderblue;
         padding: 10px;
+      }
+      .box{
+        color: red;
+        font-size: 20px;
       }
 
       #one{
-        width: 600px;
+        width: 400px;
       }
       #two{
-        widht:500px;
-        padding:25px;
-        border: 25px solid green;
+        width: 360px;
+        padding:10px;
+        border: 10px solid green;
         margin: 0;
       }
     </style>
@@ -34,18 +39,18 @@
   <body>
     <h3>Box Model:</h3>
     <p>Note: when we set width and height we only set width and height of the content area,
-       but when we need to calculate full size of element we should add padding, border and margins also.See the examples below, box model one has only width 600px
-       and box model two also has width 600px but including paddings,borders,and margins. <br><br>
-       Here is width calculation for box model two:<br><br>
-       <span>500px (width)+ 25px (left + right padding)+ 25px (left + right border)+ 0px (left + right margin)= 600px</span>
+       but when we need to calculate full size of element we should add padding, border and margins also.We can see the diffrences in below examples,"Paragraph one"  has only width 400px
+       and "Paragraph two" also has width 400px but including paddings,borders,and margins. So "Paragrph two" is box model example.<br><br>
+       Here is width calculation for "Paragraph two":<br><br>
+       <span class="border">360px (width)+ 10px (left + right padding)+ 10px (left + right border)+ 0px (left + right margin)= 400px</span>
     </p>
     <br><br>
     <div id="one">
-      Box model one: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <span class="box">Paragraph one:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
 
     <div id="two">
-      Box model two: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <span class="box">Paragraph two:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
   </body>
 </html>

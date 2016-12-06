@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Table</title>
+    <style>
+    body{
+      margin:  30px 60px;
+    }
+      h1{
+        text-align: center;
+      }
+      table.one{
+        border-collapse: collapse;
+      }
+      table.one th{border: 1px solid black;}
+      table.one td{border: 1px solid black;}
+
+      table.two{
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table.two th{border: 1px solid black;height: 50px}
+      table.two td{border: 1px solid black; }
+
+      table.three{
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table.three th{border: 1px solid black;height:40px;text-align: right;}
+      table.three td{border: 1px solid black; height: 40px; vertical-align: bottom;}
+
+      table.four{
+        border-collapse: collapse;
+        width: 100%;
+
+      }
+      table.four th, table.four td{border: 1px solid #ddd; height:40px; padding: 12px; text-align: left;}
+
+      table.five{
+        border-collapse: collapse;
+        width: 100%;
+
+      }
+      table.five th, table.five td{border-bottom: 1px solid #ddd; height:40px; padding: 8px; text-align: left;}
+
+      table.six{
+        border-collapse: collapse;
+        width: 100%;
+
+      }
+      table.six th, table.six td{border-bottom: 1px solid #ddd; height:40px; padding: 8px; text-align: left;}
+      table.six tr:hover{background-color: #f5f5f5;}
+
+      table.seven{
+        border-collapse: collapse;
+        width: 100%;
+
+      }
+      table.seven th, table.seven td{border-bottom: 1px solid #ddd; height:40px; padding: 8px; text-align: left;}
+      table.seven th{background-color: #4CAF50;color: white;}
+      table.seven tr:nth-child(even){background-color:  silver;}
+      table.seven tr:nth-child(odd){background-color:  gray;}
+    </style>
+  </head>
+  <body>
+    <h1>CSS TABLE</h1>
+    <h2>Default table: </h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Color</th>
+      </tr>
+      <tr>
+        <td>name1</td>
+        <td>6</td>
+        <td>green</td>
+      </tr>
+      <tr>
+        <td>name2</td>
+        <td>2</td>
+        <td>yellow</td>
+      </tr>
+      <tr>
+        <td>name3</td>
+        <td>7</td>
+        <td>purple</td>
+      </tr>
+    </table><hr>
+    <h2>Css Style Table: </h2>
+    <h3>Table with border-</h3>
+    <table class="one">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Greffin</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Greffin</td>
+        <td>$90</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$20</td>
+      </tr>
+    </table><br><br>
+    <h3>Table with width and height-</h3>
+    <table class="two">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Greffin</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Greffin</td>
+        <td>$90</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$20</td>
+      </tr>
+    </table><br><br>
+    <h3>Table with horizontal alignment and vertical alignment- Table's head are aligned right which is horizontal
+    alignment and table's data are aligned bottom which is vertical alignement. </h3>
+    <table class="three">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Greffin</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Greffin</td>
+        <td>$90</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$20</td>
+      </tr>
+    </table><br><br>
+    <h3>Table with padding-</h3>
+    <table class="four">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Greffin</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Greffin</td>
+        <td>$90</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$20</td>
+      </tr>
+    </table><br><br>
+    <h3>Table with horizontal dividers-</h3>
+    <table class="five">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Greffin</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Greffin</td>
+        <td>$90</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$20</td>
+      </tr>
+    </table><br><br>
+    <h3>Hoverable table-</h3>
+    <table class="six">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Greffin</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Greffin</td>
+        <td>$90</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$20</td>
+      </tr>
+    </table><br><br>
+    <h3>Stripped and color table- Colored head with stripped row.</h3>
+    <table class="seven">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Greffin</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Greffin</td>
+        <td>$90</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$20</td>
+      </tr>
+      <tr>
+        <td>Mike</td>
+        <td>johnson</td>
+        <td>$200</td>
+      </tr>
+    </table>
+  </body>
+</html>

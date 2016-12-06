@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Display & Max-Width</title>
+    <style>
+      .one{
+        width: 1500px;
+        margin: auto;
+        border: 2px solid red;
+      }
+      .two{
+        max-width: 1500px;
+        margin: auto;
+        border: 2px solid red;
+      }
+      p+div{
+        border:1px solid hotpink;
+        border-radius:8px;
+        padding: 10px 20px;
+      }
+      span{
+        display: inline-block;
+        margin-top: 10px;
+        border:2px solid lightblue;
+        border-radius:8px;
+        padding: 5px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Css Display</h3>
+    <p>
+      The "display" is most important css propert for controlling layout.
+      The display property specifies if/how an element is displayed.
+      Every HTML element has a default display value depending on what type of element it is.
+      The default display value for most elements is block or inline.
+    </p>
+    <p>
+      <strong>A block-level element</strong> always starts on a new line and takes up the full width
+      available (stretches out to the left and right as far as it can).see the example below-
+      <div> "div, h1-h6, p, form, header, footer, section" are the block level elements.This para is in div which is
+      also a block level elemnt thats why its taking full width.</div>
+    </p>
+
+    <p>
+      <strong>An inline element</strong> does not start on a new line and only takes up as much width as necessary.See the example below.
+      <br><span>"span, a, img" are the example of inline elements.This para is in span which is
+      also a inline elemnt thats why its not taking full width.</span>
+    </p>
+
+
+
+    <hr><hr>
+    <h3>Css max-width</h3>
+    <div class="one">
+      <p>
+        This is div1 element has width 1500px. It needs scroll to see complete div items
+      </p>
+    </div><br>
+    <div class="two">
+      <p>
+        This is div2 element has mas-width 1500px.Don't require scroll, it is adjusted for screen automatically.
+      </p>
+    </div>
+    <br>
+    <p>
+      <strong>Note: </strong> If we resize the browser smaller than 1500px,
+       browser adds a scroll for div1 because width is set as 1500px while div2 don't need scroll beacuse max-width is set as 1500px. </strong>
+    </p>
+  </body>
+</html>

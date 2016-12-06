@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>CSS Styles</title>
+      <link rel="stylesheet" href="style1.css">
+      <link rel="stylesheet" href="style2.css">
+      <style>
+        #internal-style{
+          background-color:#05668D;
+          padding: 60px;
+        }
+        #para1{
+          color:#ffffff;
+        }
+        .para2{
+          color:red;
+          font-size: 30px;
+          font-family: cursive;
+        }
+      </style>
+    </head>
+
+    <body>
+    <!--Inline Style Block-->
+      <div id="inline-style" style="background-color:#FE4A49; color:#ffffff; padding:60px; font-family:Monospace;">
+        <h2>Inline Style: </h2>
+        <p>An inline style may be used to apply a unique style for a single element.
+           So inline css is used to style this entire red block.</p>
+        <p style="font-size:25px;">In inline style it is difficult to style entire
+           website because inline style apply style for single element so we have to add style attribute to each element.
+        <br>like this paragraph, here i am using diffrent style for font-size than above.</p>
+      </div>
+
+      <!--Internal Style Block-->
+      <div id="internal-style">
+        <h2>Internal Style</h2>
+        <p id="para1">Internal style is used if one single page has usnique style.
+           This entire blue block is style with internal style.</p>
+        <p class="para2">This paragraph has a diffrent style than above it can
+           easily achieve by using internal style than inline style.</p>
+      </div>
+
+      <!--External Style Block-->
+      <div style="border:3px solid gray;margin-top:20px;" >
+        <h2>External Style:</h2>
+        <p>This white block contains two diffrent block, First Block and Second Block...t
+           o represent how to style each page with unique style in a multi page website using external style sheet.</p>
+        <div class="style1">
+          <h2>Fisrt Block:</h2>
+          <p>This entire lime color block is style with diffrent external css style sheet.</p>
+        </div>
+        <div class="style2">
+          <h2>Second Block:</h2>
+          <p>This entire pink block is style with diffrent external css style sheet.</p>
+        </div>
+     </div>
+  </body>
+</html>

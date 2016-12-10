@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Bootstrap</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      #main_heading{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main_heading">Bootstrap Learning</h1>
+      <h2>Container and Container Fluid: </h2>
+      <div class="container">
+        <p>
+          This part is inide a <code>.container</code> class. The <code>.container</code> provide fixed width.
+        </p>
+      </div>
+      <div class="container-fluid">
+        <p>
+          This part is inide a <code>.container-fluid</code> class. The <code>.container-fluid</code> provide full width.
+        </p>
+      </div>
+      <br>
+      <p>
+      See the above paragraphs....we can notice the difference between container and container-fluid class.
+      </p>
+     <hr>
+     <h2>Bootstrap grid system: </h2>
+     <p>
+       Bootstrap's grid system allows up to 12 columns across the page.
+     </p>
+     <div class="cotainer-fluid">
+       <h4>Two Equal columns-</h4>
+       <div class="row">
+          <div class="col-sm-6" style="background-color:palegreen;">.col-sm-6</div>
+          <div class="col-sm-6" style="background-color:beige;">.col-sm-6</div>
+       </div>
+     </div>
+     <div class="cotainer-fluid">
+       <h4>Three Equal columns-</h4>
+       <div class="row">
+          <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+          <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+          <div class="col-sm-4" style="background-color:khaki;">.col-sm-4</div>
+       </div>
+     </div>
+     <div class="cotainer-fluid">
+       <h4>Four Equal columns-</h4>
+       <div class="row">
+          <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+          <div class="col-sm-3" style="background-color:beige;">.col-sm-3</div>
+          <div class="col-sm-3" style="background-color:azure;">.col-sm-3</div>
+          <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+       </div>
+     </div>
+     <div class="cotainer-fluid">
+       <h4>Six Equal columns-</h4>
+       <div class="row">
+          <div class="col-sm-2" style="background-color:lavender;">.col-sm-2</div>
+          <div class="col-sm-2" style="background-color:beige;">.col-sm-2</div>
+          <div class="col-sm-2" style="background-color:azure;">.col-sm-2</div>
+          <div class="col-sm-2" style="background-color:lavenderblush;">.col-sm-2</div>
+          <div class="col-sm-2" style="background-color:aliceblue;">.col-sm-2</div>
+          <div class="col-sm-2" style="background-color:bisque;">.col-sm-2</div>
+       </div>
+     </div>
+     <div class="cotainer-fluid">
+       <h4>Twelve Equal columns-</h4>
+       <div class="row">
+          <div class="col-sm-1" style="background-color:lavender;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:beige;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:azure;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:lavenderblush;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:aliceblue;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:palegreen;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:bisque;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:aliceblue;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:khaki;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:beige;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:zure;">.col-sm-1</div>
+          <div class="col-sm-1" style="background-color:burlywood;">.col-sm-1</div>
+       </div>
+     </div>
+     <div class="cotainer-fluid">
+       <h4>Two columns-</h4>
+       <div class="row">
+          <div class="col-sm-1" style="background-color:bisque;">.col-sm-1</div>
+          <div class="col-sm-11" style="background-color:lavender;">.col-sm-11</div>
+       </div>
+     </div>
+     <div class="cotainer-fluid">
+       <h4>Two columns-</h4>
+       <div class="row">
+          <div class="col-sm-2" style="background-color:aliceblue;">.col-sm-2</div>
+          <div class="col-sm-10" style="background-color:bisque;">.col-sm-10</div>
+       </div>
+     </div>
+     <div class="cotainer-fluid">
+       <h4>Two columns-</h4>
+       <div class="row">
+          <div class="col-sm-3" style="background-color:cornsilk;">.col-sm-3</div>
+          <div class="col-sm-9" style="background-color:aquamarine;">.col-sm-9</div>
+       </div>
+     </div>
+     <div class="cotainer-fluid">
+       <h4>Two columns-</h4>
+       <div class="row">
+          <div class="col-sm-4" style="background-color:burlywood;">.col-sm-4</div>
+          <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+       </div>
+     </div>
+     <div class="cotainer-fluid">
+       <h4>Two columns-</h4>
+       <div class="row">
+          <div class="col-sm-5" style="background-color:azure;">.col-sm-5</div>
+          <div class="col-sm-7" style="background-color:lavender;">.col-sm-7</div>
+       </div>
+     </div>
+      <hr>
+      <h2>Bootstrap Headings: </h2>
+        <h1>This is h1 heading of bootstrap(36px)</h1>
+        <h2>This is h2 heading of bootstrap(30px)</h2>
+        <h3>This is h3 heading of bootstrap(24px)</h3>
+        <h4>This is h4 heading of bootstrap(18px)</h4>
+        <h5>This is h5 heading of bootstrap(14px)</h5>
+        <h6>This is h6 heading of bootstrap(12px)</h6>
+      <hr>
+      <h2>Bootstrap <code>blockquote</code> style: </h2>
+      <blockquote>
+        <p>
+          For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+          WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+          <footer>From WWF's website</footer>
+        </p>
+      </blockquote>
+      <h3>Bootstrap reverse<code>blockquote</code> style: </h3>
+      <blockquote class="blockquote-reverse">
+        <p>
+          For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+          WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+          <footer>From WWF's website</footer>
+        </p>
+      </blockquote>
+      <hr>
+      <h2>Bootstrap abbriviation style:</h2>
+      <p>The <abbr title="Cascading Style Sheets">CSS</abbr> is a language that describes the style of an
+         <abbr title="Hyper Text Markup Language">HTML</abbr> document.</p>
+      <hr>
+      <h2>Bootstrap code element style: <small>The bootstrap will style HTML code element iin following ways.</small></h2>
+      <p>These HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+      <hr>
+  </body>
+</html>

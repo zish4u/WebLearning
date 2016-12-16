@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Learning Bootstrap</title>
+  </head>
+  <body>
+    <div class="page-header text-center">
+      <h1>Bootstrap Glyphicons and Badge/Label</h1>
+    </div>
+    <div class="jumbotron">
+      <h2>Bootstrap Glyphicon: <small>These are the example of glyphicons.</small></h2>
+      <p>
+        Envelope Icon: <span class="glyphicon glyphicon-envelope"></span>
+      </p>
+      <p>
+        Envelope Icon as link: <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+      </p>
+
+      <p>
+        Print Icons: <span class="glyphicon glyphicon-print"></span>
+      </p>
+      <p>
+        Print Icons on styled link button:<a href="#" class="btn btn-success btn-lg">
+          <span class="glyphicon glyphicon-print"></span> Print</a>
+      </p>
+      <p>
+        Print Icons on styled button:<button type="button" class="btn btn-info btn-lg" name="button">
+          <span class="glyphicon glyphicon-search"></span> Search</button>
+      </p>
+      <p>
+        Print Icons on default styled button:<button type="button" class="btn default btn-lg" name="button">
+          <span class="glyphicon glyphicon-search"></span> Search</button>
+      </p>
+    </div>
+    <div class="jumbotron">
+      <h2>Bootstrap Badge:</h2>
+      <a href="#">News<span class="badge"> 5</span></a><br><br>
+      <button type="button" class="btn btn-primary" name="button">Primary <span class="badge">7</span></button><hr>
+      <h2>Bootstrap Label:</h2>
+      <h3>
+        Example<span class="label label-default"> New</span><br><br>
+        <span class="label label-default">Default Label</span>
+        <span class="label label-primary">Primary Label</span>
+        <span class="label label-success">Success Label</span>
+        <span class="label label-info">info Label</span>
+        <span class="label label-warning">Warning Label</span>
+        <span class="label label-danger">Danger Label</span>
+      </h3>
+    </div>
+
+  </body>
+</html>
